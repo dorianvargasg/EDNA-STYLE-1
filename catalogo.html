@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>EDNA STYLE catalogo</title>
+                <style>
+                        body {
+                                    font-family: Arial, Helvetica, sans-serif;
+                                                text-align: center;
+                                                            background-color: #f5f5dc;
+                                                                        margin-top: 50px;
+                                                                                }
+                                                                                        h1 {
+                                                                                                    color: #333;
+                                                                                                            }
+                                                                                                            /* Contenedor del menú */
+                                                                                                              .menu-contenedor {
+                                                                                                                  position: relative;
+                                                                                                                      display: inline-block;
+                                                                                                                        }
+
+                                                                                                                          /* El botón de las 3 líneas (Hamburguesa) */
+                                                                                                                            .menu-toggle {
+                                                                                                                                display: block;
+                                                                                                                                    width: 30px;
+                                                                                                                                        height: 25px;
+                                                                                                                                            cursor: pointer;
+                                                                                                                                                background: transparent;
+                                                                                                                                                    border: none;
+                                                                                                                                                        padding: 0;
+                                                                                                                                                          }
+
+                                                                                                                                                            .menu-toggle span {
+                                                                                                                                                                display: block;
+                                                                                                                                                                    height: 4px;
+                                                                                                                                                                        width: 100%;
+                                                                                                                                                                            background: #333;
+                                                                                                                                                                                border-radius: 2px;
+                                                                                                                                                                                    margin-bottom: 5px;
+                                                                                                                                                                                      }
+
+                                                                                                                                                                                        /* Menú desplegable (oculto por defecto) */
+                                                                                                                                                                                          .menu-desplegable {
+                                                                                                                                                                                              display: none;
+                                                                                                                                                                                                  position: absolute;
+                                                                                                                                                                                                      top: 100%;
+                                                                                                                                                                                                          left: 0;
+                                                                                                                                                                                                              background-color: #563500;
+                                                                                                                                                                                                                  min-width: 160px;
+                                                                                                                                                                                                                      box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                                                                                                                                                                                                                          z-index: 1;
+                                                                                                                                                                                                                              list-style-type: none;
+                                                                                                                                                                                                                                  padding: 0;
+                                                                                                                                                                                                                                      margin: 5px 0 0 0;
+                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                          .menu-desplegable li a {
+                                                                                                                                                                                                                                              color: white;
+                                                                                                                                                                                                                                                  padding: 12px 16px;
+                                                                                                                                                                                                                                                      text-decoration: none;
+                                                                                                                                                                                                                                                          display: block;
+                                                                                                                                                                                                                                                            }
+
+                                                                                                                                                                                                                                                              .menu-desplegable li a:hover { background-color: #563500
+                                                                                                                                                                                                                                                            ; }
+
+                                                                                                                                                                                                                                                                /* Mostrar menú al hacer clic (o presionar) en el contenedor */
+                                                                                                                                                                                                                                                                  .menu-contenedor:focus-within .menu-desplegable {
+                                                                                                                                                                                                                                                                      display: block;
+                                                                                                                                                                                                                                                                        }
+
+                                                                                                                                                                                                                                                
+
+                                                                                                                </style>
+                                                                                                                </head>
+                                                                                                                <body>
+
+                                                                                                                    <h1>EDNA STYLE</h1>
+
+                                                                                                                    <nav class="navbar">
+                                                                                                                            <div class="logo"></div>
+                                                                                                                                
+                                                                                                                                <div class="menu-contenedor" tabindex="1">
+                                                                                                                                      <button class="menu-toggle" aria-label="Menú">
+                                                                                                                                          <span></span>
+                                                                                                                                              <span></span>
+                                                                                                                                                  <span></span>
+                                                                                                                                                    </button>
+                                                                                                                                                      
+                                                                                                                                                        <ul class="menu-desplegable">
+                                                                                                                                                            <li><a href="#">Polera hombre</a></li>
+                                                                                                                                                                <li><a href="#">Poleron hombre</a></li>
+                                                                                                                                                                    <li><a href="#">Polera mujer</a></li>
+                                                                                                                                                                      </ul>
+                                                                                                                                                                      </div>
+                                                                                                                        
+
+
+                                                                                                                        </body>
+
+                                                                                                                        </html>
